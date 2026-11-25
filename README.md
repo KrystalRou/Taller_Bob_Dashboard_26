@@ -1,6 +1,6 @@
 # 📊 Construye tu primer dashboard con IBM Bob
 
-Taller híbrido · Viernes 27 de noviembre · CU2, BUAP
+Taller híbrido · Viernes 27 de noviembre · ITVER y BUAP
 Embajadores Estudiantiles de IBM SkillsBuild
 
 En este taller vas a correr un dashboard hecho en Python con datos reales de ventas (ElectroMarket) y le vas a pedir a **IBM Bob**, un asistente de programación con IA, que lo mejore.
