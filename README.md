@@ -5,6 +5,8 @@ Embajadores Estudiantiles de IBM SkillsBuild
 
 En este taller vas a correr un dashboard hecho en Python con datos reales de ventas (ElectroMarket) y le vas a pedir a **IBM Bob**, un asistente de programación con IA, que lo mejore.
 
+🌐 **Ver los dashboards sin instalar nada:** [krystalrou.github.io/Taller_Bob_Dashboard_26](https://krystalrou.github.io/Taller_Bob_Dashboard_26/)
+
 📽️ **Sigue la presentación aquí:** [[Presentacion_Taller.pdf](https://docs.google.com/presentation/d/1MB-WsTL2hDBKNTcGNmS_J0_5Nv2OXHoGuluRwPTgcSM/edit?usp=sharing)](Presentacion_Taller.pdf)
 
 ---
@@ -19,6 +21,10 @@ En este taller vas a correr un dashboard hecho en Python con datos reales de ven
 | `requirements.txt` | Las librerías que necesita el código |
 | `Presentacion_Taller.pdf` | La presentación del taller |
 | `retos.md` | Ideas de cambios para pedirle a Bob |
+| `Dashboard_ElectroMarket_Completo.ipynb` | **Versión extendida** (después del taller): 15 gráficas, KPIs y página web de una sola pantalla |
+| `Aplicacion_Ingenieria_Mecanica.ipynb` | **Aplicación a la ingeniería mecánica:** mantenimiento predictivo de una fresadora |
+| `ai4i2020.csv` | Datos de la fresadora (AI4I 2020, UCI) |
+| `index.html` y los `.html` | Las páginas web que publica GitHub Pages |
 
 ---
 
@@ -122,6 +128,32 @@ Escríbele como se lo dirías a una persona. Revisa [retos.md](retos.md) para ve
 | La app dice que no encuentra el Excel | `ElectroMarket.xlsx` debe estar junto a `app.py`, o súbelo en la barra lateral de la app |
 | No se ven los filtros | Instala la extensión **Jupyter** y vuelve a correr todo |
 | No puedes instalar Bob | Haz equipo con quien tengas al lado y sigan juntos en su computadora |
+
+---
+
+## 🌟 Después del taller: versión completa e ingeniería mecánica
+
+| Notebook | Qué analiza | Ver (sin instalar) | Correr (sin instalar) |
+|---|---|---|---|
+| `Dashboard_ElectroMarket_Completo.ipynb` | Ventas en 147 países: 8 KPIs y 15 gráficas | [Ver dashboard](https://krystalrou.github.io/Taller_Bob_Dashboard_26/dashboard_electromarket_completo.html) | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KrystalRou/Taller_Bob_Dashboard_26/blob/main/Dashboard_ElectroMarket_Completo.ipynb) |
+| `Aplicacion_Ingenieria_Mecanica.ipynb` | Mantenimiento predictivo de una fresadora: Pareto, Cp/Cpk, carta de control, curvas de potencia | [Ver dashboard](https://krystalrou.github.io/Taller_Bob_Dashboard_26/aplicacion_ingenieria_mecanica.html) | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/KrystalRou/Taller_Bob_Dashboard_26/blob/main/Aplicacion_Ingenieria_Mecanica.ipynb) |
+
+**Ver:** los enlaces abren la página web en cualquier navegador, incluso en el celular. Toca una gráfica para verla en grande, usa ◀ ▶ para pasar a la siguiente y **Esc** para regresar.
+
+**Correr en Google Colab:** solo necesitas una cuenta de Google.
+1. Toca **Abrir en Colab**.
+2. Corre la primera celda, **"¿Lo abriste en Google Colab?"**: descarga este repositorio con los datos y activa los filtros.
+3. Ve a **Entorno de ejecución → Ejecutar todas**. La última celda descarga la página web del dashboard.
+
+**Correr y modificar con IBM Bob en tu computadora:** sigue los pasos de las Tasks 1 a 3 y abre cualquiera de los dos notebooks.
+- **Cierra el notebook antes de pedirle un cambio a Bob** y vuelve a abrirlo después. Si queda abierto, el editor puede guardar la versión vieja encima del cambio de Bob.
+- Nombra el archivo con `@` y termina el prompt con *"No cambies nada más"*:
+  ```
+  @Aplicacion_Ingenieria_Mecanica.ipynb Agrega una carta de control R (rangos) junto a g_carta_control y súmala a GRAFICAS. No cambies nada más.
+  ```
+- Más ideas para la versión de mecánica: cambiar los límites `LIE` y `LSE` para ver cómo cambia el **Cpk**, o entrenar un modelo que prediga la falla con `scikit-learn`.
+
+Datos de la fresadora: *AI4I 2020 Predictive Maintenance Dataset*, S. Matzka, UCI Machine Learning Repository (2020), licencia CC BY 4.0. Es una base sintética creada para reflejar datos reales de mantenimiento en la industria.
 
 ---
 
